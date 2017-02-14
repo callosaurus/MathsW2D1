@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+-(void)startGame;
+-(void)enteredAnswer;
 
 @end
 

@@ -8,6 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+@class Player;
+
 @interface GameModel : NSObject
+
+@property Player *player1;
+@property Player *player2;
+@property NSString *questionString;
+@property int correctAnswer;
+@property int inputAnswer;
+@property int currentPlayerNumber;
+
+
+-(void)generateQuestionForPlayer:(Player *)player;
+-(BOOL)checkAnswer;
 
 @end

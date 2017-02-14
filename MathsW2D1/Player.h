@@ -10,4 +10,8 @@
 
 @interface Player : NSObject
 
+@property int numberOfLives;
+
+-(void)loseOneLife;
+
 @end
